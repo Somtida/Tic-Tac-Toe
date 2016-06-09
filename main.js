@@ -54,9 +54,9 @@ function clickBox(){
         }
         //$('.over').show().delay(10000).fadeOut();
 
-        $('.over').show().delay(5000).fadeOut();
-        $('.over').animate({left:'250px'});
-
+        $('.over').show().fadeIn();
+        //$('.over').animate({left:'250px'});
+        $('.over').delay(5000).hide();
         // $('.over').show().delay(15000).fadeOut();
         // $('.over').animate({height: '300px', opacity: '0.4'}, "slow");
         // $('.over').animate({width: '300px', opacity: '0.8'}, "slow");
@@ -65,7 +65,7 @@ function clickBox(){
         // $('.over').animate({left: '100px'}, "slow");
         // $('.over').animate({fontSize: '3em'}, "slow");
         //$('#playerName').text("Ready => Go");
-        $('#playerName').empty();
+        $('#playerName').delay(5000).text("");
         $('.col').empty();
         //$('.over').empty();
 
@@ -95,7 +95,8 @@ function clickBox(){
         // $('.over').show();
         // $('.over').animate({left:'250px'});
 
-        $('.over').show().delay(5000).fadeOut();
+        $('.over').show().fadeIn();
+        $('.over').delay(5000).hide();
         // $('.over').animate({height: '300px', opacity: '0.4'}, "slow");
         // $('.over').animate({width: '300px', opacity: '0.8'}, "slow");
         // $('.over').animate({height: '100px', opacity: '0.4'}, "slow");
@@ -105,7 +106,7 @@ function clickBox(){
         $('.col').empty();
         //$('#playerName').emthy().delay(5000);
         //$('#playerName').text('Ready => Go');
-        $('#playerName').empty();
+        $('#playerName').delay(5000).text("");
         //$('.over').empty();
   
 
@@ -120,6 +121,7 @@ function clickBox(){
   if(count==9){
     $('#playerName').text('Game Over!!!');
     //$('.over').show().delay(5000).hide();
+    alert('Game Over!! Please Click to Restart');
     $('.col').empty();
     $('#playerName').empty();
     count==0;
