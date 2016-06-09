@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="http://code.jquery.com/jquery-2.2.4.js"></script>
+  <script src="main.js"></script>
+</head>
+<body>
+  
+  
+  <div class="container">
+  <h1>Tic Tac Toe</h1>
+  <div class="name">
+    <label>Player 1 : </label>
+    <input type="text" name="player1" class="player" id="player1">
+    <br>
+    <label>Player 2 : </label>
+    <input type="text" name="player2" class="player" id="player2">
+    <br>
+    <br>
+    <button class="addPlayer">START</button>
+    
+  </div>
+  <div class="over" style="background:#555;color:#fff;text-align:center;height:400px;width:500px;position:absolute;font-size:60px;left: 360px;top:150px;">
+  Yeah!<br>
+  You are the Champion!!
+  </div>
+  <div class="area">
+    <p id="playerName"></p>
+    <table align="center" class="board">
+      <tr class="row">
+        <td class="col highlight" id="1"></td>
+        <td class="col" id="2"></td>
+        <td class="col highlight" id="3"></td>
+      </tr>
+      <tr class="row">
+        <td class="col" id="4"></td>
+        <td class="col highlight" id="5"></td>
+        <td class="col" id="6"></td>
+      </tr>
+      <tr class="row">
+        <td class="col highlight" id="7"></td>
+        <td class="col" id="8"></td>
+        <td class="col highlight" id="9"></td>
+      </tr>
+    </table>
+  
+  <div class="result">
+    Ready &amp; Go
+  </div>
+  </div>
+  </div>
+
+</body>
+</html>
