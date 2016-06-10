@@ -23,9 +23,10 @@ h1{
 }
 .over{
   background-color: #000;
-  opacity: 0.8;
+  opacity: 0.9;
   margin: 0 auto;
-
+  padding: 15px;
+  text-align: center;
 }
 /*.over{
   background-color: #000;

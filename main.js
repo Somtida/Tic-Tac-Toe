@@ -48,27 +48,13 @@ function clickBox(){
       if(arrPath1){
         // $('.result').text("Player1 Win");
         if(player1!==""){
-          $('#playerName').text(player1+' is the Winner!!!');
+          $('.over').text(player1+' is the Winner!!!');
         }else{
-          $('#playerName').text('Player1 is the Winner!!!');
+          $('.over').text('Player1 is the Winner!!!');
         }
         //$('.over').show().delay(10000).fadeOut();
-
-        $('.over').show().fadeIn();
-        //$('.over').animate({left:'250px'});
-        $('.over').delay(5000).hide();
-        // $('.over').show().delay(15000).fadeOut();
-        // $('.over').animate({height: '300px', opacity: '0.4'}, "slow");
-        // $('.over').animate({width: '300px', opacity: '0.8'}, "slow");
-        // $('.over').animate({height: '100px', opacity: '0.4'}, "slow");
-        // $('.over').animate({width: '100px', opacity: '0.8'}, "slow");
-        // $('.over').animate({left: '100px'}, "slow");
-        // $('.over').animate({fontSize: '3em'}, "slow");
-        //$('#playerName').text("Ready => Go");
-        $('#playerName').delay(5000).text("");
-        $('.col').empty();
-        //$('.over').empty();
-
+        ending();
+       
   
       }else{
         $('.result').text("Continue");
@@ -88,28 +74,14 @@ function clickBox(){
       if(arrPath2){
         $('.result').text("Player2 Win");
         if(player2 !== ""){
-          $('#playerName').text(player2+' is the Winner!!!');
+          $('.over').text(player2+' is the Winner!!!');
         }else{
-          $('#playerName').text('Player2 is the Winner!!!');
+          $('.over').text('Player2 is the Winner!!!');
         }
         // $('.over').show();
         // $('.over').animate({left:'250px'});
 
-        $('.over').show().fadeIn();
-        $('.over').delay(5000).hide();
-        // $('.over').animate({height: '300px', opacity: '0.4'}, "slow");
-        // $('.over').animate({width: '300px', opacity: '0.8'}, "slow");
-        // $('.over').animate({height: '100px', opacity: '0.4'}, "slow");
-        // $('.over').animate({width: '100px', opacity: '0.8'}, "slow");
-        // $('.over').animate({left: '100px'}, "slow");
-        // $('.over').animate({fontSize: '3em'}, "slow");
-        $('.col').empty();
-        //$('#playerName').emthy().delay(5000);
-        //$('#playerName').text('Ready => Go');
-        $('#playerName').delay(5000).text("");
-        //$('.over').empty();
-  
-
+        ending();
 
       }else{
         $('.result').text("Continue");
@@ -122,9 +94,11 @@ function clickBox(){
     $('#playerName').text('Game Over!!!');
     //$('.over').show().delay(5000).hide();
     alert('Game Over!! Please Click to Restart');
-    $('.col').empty();
-    $('#playerName').empty();
-    count==0;
+    $('.col').delay(15000).empty();
+    //$('#playerName').empty();
+    path1=[];
+    path2=[];
+    count=0;
   }
   
 
@@ -138,7 +112,25 @@ function equal(array1, array2){
   return isSame;
 }
 
-
+function ending(){
+  path1 = [];
+  path2 = [];
+   $('.over').show().fadeIn('fast').delay(5000).fadeOut('slow');
+    //$('.over').animate({left:'250px'});
+    //$('.over').delay(15000).hide();
+    // $('.over').show().delay(15000).fadeOut();
+    // $('.over').animate({height: '300px', opacity: '0.4'}, "slow");
+    // $('.over').animate({width: '300px', opacity: '0.8'}, "slow");
+    // $('.over').animate({height: '100px', opacity: '0.4'}, "slow");
+    // $('.over').animate({width: '100px', opacity: '0.8'}, "slow");
+    // $('.over').animate({left: '100px'}, "slow");
+    // $('.over').animate({fontSize: '3em'}, "slow");
+    //$('#playerName').text("Ready => Go");
+    $('#playerName').delay(5000).text("");
+    $('.col').delay(15000).empty();
+    //$('.over').empty();
+    count=0;
+}
 
 function checkPath(arr){
   console.log("Checking");
