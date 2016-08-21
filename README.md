@@ -1,4 +1,6 @@
-# [Tic-Tac-Toe](http://somtida.com/Tic-Tac-Toe/)
+# Tic-Tac-Toe
+[http://somtida.com/Tic-Tac-Toe/](http://somtida.com/Tic-Tac-Toe/)
+
 ##Implement the game of Tic Tac Toe in a live webapp.
 ![TTT](http://i.imgur.com/8myyf11.png)
 
